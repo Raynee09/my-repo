@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Participant Registration | TECHNO 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">TECHNO <span>2026</span></div>
+      <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="results.html">Results</a>
+        <a href="register.html" class="active">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Participant Registration Form</h1>
+      <p>Register for your chosen competitions, hackathons, or workshops. Please provide accurate university details for verification and prize distribution.</p>
+    </div>
+
+    <section class="form-card">
+      <form action="#" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="fullName">Full Name <span class="required">*</span></label>
+          <input type="text" id="fullName" name="fullName" class="form-control" placeholder="e.g. Aryan Sharma" pattern="[A-Za-z\s]{3,50}" title="Please enter a valid name (letters and spaces only, min 3 characters)" required>
+        </div>
+
+        <div class="form-group">
+          <label for="studentEmail">College Email Address <span class="required">*</span></label>
+          <input type="email" id="studentEmail" name="studentEmail" class="form-control" placeholder="student@university.edu" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneNumber">Mobile Number (10 Digits) <span class="required">*</span></label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="9876543210" pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number" required>
+        </div>
+
+        <div class="form-group">
+          <label for="studyYear">Current Year of Study <span class="required">*</span></label>
+          <input type="number" id="studyYear" name="studyYear" class="form-control" min="1" max="5" value="2" required>
+        </div>
+
+        <div class="form-group">
+          <label for="collegeSelect">College / University Name <span class="required">*</span></label>
+          <select id="collegeSelect" name="collegeSelect" class="form-control" required>
+            <option value="" disabled selected>-- Select Your Institution --</option>
+            <option value="thapar">Thapar Institute of Engineering &amp; Technology</option>
+            <option value="iit-delhi">Indian Institute of Technology (IIT) Delhi</option>
+            <option value="nit">National Institute of Technology (NIT)</option>
+            <option value="bits">BITS Pilani</option>
+            <option value="dtu">Delhi Technological University (DTU)</option>
+            <option value="pec">Punjab Engineering College (PEC)</option>
+            <option value="other">Other University / College</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="primaryEvent">Primary Event Registration <span class="required">*</span></label>
+          <select id="primaryEvent" name="primaryEvent" class="form-control" required>
+            <option value="" disabled selected>-- Select Primary Competition --</option>
+            <option value="codequest">CodeQuest 24-Hour AI &amp; Web3 Hackathon</option>
+            <option value="robowars">RoboWars Combat Championship</option>
+            <option value="webcraft">WebCraft UI/UX Design Sprint</option>
+            <option value="battle-bands">Battle of the Bands (Rock/Fusion)</option>
+            <option value="valorant">Valorant 5v5 Esports Championship</option>
+            <option value="tech-trivia">Tech Trivia &amp; Cyber Clash Quiz</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Participation Type <span class="required">*</span></label>
+          <div class="radio-group">
+            <label for="typeSolo"><input type="radio" id="typeSolo" name="participationType" value="solo" checked> Solo / Individual</label>
+            <label for="typeTeam"><input type="radio" id="typeTeam" name="participationType" value="team"> Team Participation (2 to 5 Members)</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Optional Workshops &amp; Masterclasses (Select any):</label>
+          <div class="checkbox-group">
+            <label for="wsAI"><input type="checkbox" id="wsAI" name="workshops" value="generative-ai"> Generative AI Masterclass</label>
+            <label for="wsCloud"><input type="checkbox" id="wsCloud" name="workshops" value="cloud-devops"> Cloud &amp; Kubernetes Workshop</label>
+            <label for="wsCyber"><input type="checkbox" id="wsCyber" name="workshops" value="cyber-security"> Ethical Hacking &amp; Bug Bounty</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="dob">Date of Birth <span class="required">*</span></label>
+          <input type="date" id="dob" name="dob" class="form-control" min="1995-01-01" max="2009-12-31" required>
+        </div>
+
+        <div class="form-group">
+          <label for="studentIdFile">Upload College ID Card (PDF / JPG / PNG) <span class="required">*</span></label>
+          <input type="file" id="studentIdFile" name="studentIdFile" class="form-control" accept=".pdf, .jpg, .jpeg, .png" required>
+        </div>
+
+        <div class="form-group">
+          <label for="teamDetails">Team Member Names / Roll Numbers (If Team Event):</label>
+          <textarea id="teamDetails" name="teamDetails" class="form-control" rows="3" placeholder="Member 1: Name & Roll No&#10;Member 2: Name & Roll No..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="termsCheck"><input type="checkbox" id="termsCheck" name="termsCheck" required> I agree to the <a href="contact.html">TECHNO 2026 Code of Conduct</a> and event regulations. <span class="required">*</span></label>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-accent">Submit Registration</button>
+          <button type="reset" class="btn btn-secondary">Reset Form</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TECHNO Fest. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> | 
+      <a href="events.html">Events</a> | 
+      <a href="schedule.html">Schedule</a> | 
+      <a href="results.html">Results</a> | 
+      <a href="register.html">Register</a> | 
+      <a href="gallery.html">Gallery</a> | 
+      <a href="contact.html">Contact</a> | 
+      <a href="faq.html">FAQ</a>
+    </p>
+  </footer>
+
+</body>
+</html>
