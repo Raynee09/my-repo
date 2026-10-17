@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Support | TECHNO 2026</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header id="main-header">
+    <div class="nav-container">
+      <div class="logo">TECHNO <span>2026</span></div>
+      <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="results.html">Results</a>
+        <a href="register.html">Register</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-header">
+      <h1>Contact &amp; Event Coordination</h1>
+      <p>Have queries about registration, event rules, accommodation, or sponsorship? Reach out to the organizing team.</p>
+    </div>
+
+    <div class="grid-2">
+      <section class="card">
+        <h2 style="color: var(--primary); margin-bottom: 0.8rem;">Organizing Secretariat</h2>
+        <p style="margin-bottom: 1rem; color: var(--muted);">The student council and faculty advisory board manage all festival coordination for TECHNO 2026.</p>
+
+        <p style="margin-bottom: 0.5rem;"><strong>Campus Address:</strong><br>Student Activity Center, Main University Campus, Tech City, Punjab – 147004</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Email Helpline:</strong><br><a href="mailto:techno2026@college.edu">techno2026@college.edu</a> / <a href="mailto:queries@technofest.com">queries@technofest.com</a></p>
+        <p style="margin-bottom: 0.5rem;"><strong>Student Convenors:</strong><br>Aryan Sharma (+91 98765 43210)<br>Priya Nair (+91 91234 56789)</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Helpdesk Hours:</strong><br>Monday to Saturday: 9:00 AM – 8:00 PM</p>
+
+        <h3 style="margin-top: 1.5rem; color: var(--primary);">Official Social Media Handles</h3>
+        <ul class="social-links">
+          <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+          <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer">X / Twitter</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2 style="color: var(--primary); margin-bottom: 0.8rem;">Send an Inquiry Message</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="contactName">Your Name <span class="required">*</span></label>
+            <input type="text" id="contactName" name="contactName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="contactEmail">Your Email Address <span class="required">*</span></label>
+            <input type="email" id="contactEmail" name="contactEmail" placeholder="name@college.edu" required>
+          </div>
+
+          <div class="form-group">
+            <label for="queryType">Inquiry Topic <span class="required">*</span></label>
+            <select id="queryType" name="queryType" required>
+              <option value="" disabled selected>-- Select Query Subject --</option>
+              <option value="reg">Registration &amp; Payment Support</option>
+              <option value="stay">Outstation Hostel Accommodation</option>
+              <option value="rules">Event Rules &amp; Team Limits</option>
+              <option value="sponsorship">Sponsorship &amp; Stall Booking</option>
+              <option value="other">General Query</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="messageText">Your Message <span class="required">*</span></label>
+            <textarea id="messageText" name="messageText" rows="4" placeholder="How can we assist you with TECHNO 2026?..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Message</button>
+        </form>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top: 1rem;" id="faq-section">
+      <h2 style="color: var(--primary); margin-bottom: 0.5rem;">Frequently Asked Questions (FAQs)</h2>
+      <p style="margin-bottom: 1.25rem; color: var(--muted);">Quick answers to top questions about participation and campus logistics.</p>
+
+      <details class="faq-item" open>
+        <summary>Who is eligible to participate?</summary>
+        <p>All registered undergraduate and postgraduate students from any recognized college or university with a valid ID card are eligible to compete.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is accommodation provided for outstation participants?</summary>
+        <p>Yes, separate on-campus hostel accommodation and daily meals are provided free of charge for shortlisted outstation teams.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can I register for multiple events?</summary>
+        <p>Yes, as long as the event timings do not overlap. Students can participate in more than one competition across the festival.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Will all participants receive certificates?</summary>
+        <p>Yes, all participants who attend their registered rounds receive an official Certificate of Participation, and winners receive merit certificates.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TECHNO Festival. All rights reserved.</p>
+    <p>
+      <a href="index.html">Home</a> | 
+      <a href="events.html">Events</a> | 
+      <a href="schedule.html">Schedule</a> | 
+      <a href="results.html">Results</a> | 
+      <a href="register.html">Register</a> | 
+      <a href="gallery.html">Gallery</a> | 
+      <a href="contact.html">Contact</a> | 
+      <a href="faq.html">FAQ</a>
+    </p>
+  </footer>
+
+</body>
+</html>
