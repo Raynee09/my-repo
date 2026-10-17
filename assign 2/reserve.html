@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Reserve — Aspire Travels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap">
+      <div class="brand">Aspire Travels</div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="packages.html">Trips</a>
+        <a href="reserve.html" class="active">Reserve</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-wrap">
+    <section class="form-container">
+      <h1>Reserve Your Trip</h1>
+      <p>Fill out the form below and our team will confirm availability within 48 hours.</p>
+
+      <form action="#" method="post" class="reserve-form">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Your full name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+        <label for="trip">Select trip</label>
+        <select id="trip" name="trip">
+          <option>Patagonia Overland</option>
+          <option>Kyoto Cultural Escape</option>
+          <option>Moroccan Markets</option>
+        </select>
+
+        <label for="date">Preferred start date</label>
+        <input id="date" name="date" type="date">
+
+        <div class="form-actions">
+          <button class="btn primary">Request Reservation</button>
+          <a class="btn ghost" href="packages.html">See Trips</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; Aspire Travels</p>
+      <p>Email: <a href="mailto:aspire_travels@gmail.com">aspire_travels@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
