@@ -1,342 +1,460 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Thyme & Ember - Modern Bistro & Taproom. Order wood-fired pizza, smash burgers, biryanis, dim sum, and desserts online.">
-  <title>Thyme & Ember | Modern Bistro & Taproom</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Olive & Oak brings together seasonal comfort food, wood-fired plates, and warm neighborhood dining."
+    />
+    <title>Olive & Oak | Seasonal Kitchen & Wine Bar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top-header">
+      <div class="nav-flex-wrapper">
+        <a href="#top-header" class="brand-logo" aria-label="Olive and Oak home">
+          <span class="logo-mark" aria-hidden="true">✦</span>
+          <div>
+            <div class="logo-text">Olive <span>&amp;</span> Oak</div>
+            <span class="logo-sub">Seasonal Kitchen &amp; Wine Bar</span>
+          </div>
+        </a>
 
-  <header class="site-header" id="top-header">
-    <div class="nav-flex-wrapper">
-      <a href="#top-header" class="brand-logo">
-        <span class="logo-flame" aria-hidden="true">🌿</span>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#banner" class="active">Home</a>
+          <a href="#restaurant-info">About</a>
+          <a href="#categories">Menu</a>
+          <a href="#menu">Favorites</a>
+          <a href="#special-offers">Offers</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
         <div>
-          <div class="logo-text">Thyme <span>&amp;</span> Ember</div>
-          <span class="logo-sub">Modern Bistro & Taproom</span>
-        </div>
-      </a>
-
-      <nav class="main-nav" aria-label="Restaurant Navigation">
-        <a href="#banner" class="active">Home</a>
-        <a href="#restaurant-info">Info</a>
-        <a href="#categories">Categories</a>
-        <a href="#menu">Menu</a>
-        <a href="#special-offers">Offers</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div>
-        <a href="#menu" class="btn btn-primary btn-sm">Order Online</a>
-      </div>
-
-    </div>
-  </header>
-
-  <section class="search-sub-strip" aria-label="Food Search and Quick Filters">
-    <div class="search-strip-inner">
-      <div class="search-input-group">
-        <span class="search-icon" aria-hidden="true">🔍</span>
-        <input type="text" placeholder="Search pizzas, burgers, biryanis, desserts..." aria-label="Search dishes">
-        <select class="search-category-select" aria-label="Filter by Food Category">
-          <option value="all">All Cuisines</option>
-          <option value="pizza">Pizza</option>
-          <option value="burger">Burgers</option>
-          <option value="indian">Indian</option>
-          <option value="asian">Asian</option>
-          <option value="dessert">Desserts</option>
-          <option value="drinks">Drinks</option>
-        </select>
-        <button type="button" class="search-submit-btn">Find</button>
-      </div>
-
-      <div class="quick-search-tags">
-        <span class="quick-tags-label">Trending:</span>
-        <a href="#menu" class="quick-tag-pill">🍕 Truffle Pizza</a>
-        <a href="#menu" class="quick-tag-pill">🍔 Ember Burger</a>
-        <a href="#menu" class="quick-tag-pill">🍛 Dum Biryani</a>
-        <a href="#menu" class="quick-tag-pill">🍰 Lava Cake</a>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="hero-banner-section" id="banner">
-    <div class="container">
-      <div class="banner-content">
-        <span class="banner-badge">
-          <span>✦</span> Wood-Fired • Seasonal • Handcrafted
-        </span>
-        <h1>Welcome to <span>Thyme &amp; Ember</span> — Where Flavor Meets Fire</h1>
-        <p>
-          Seasonal, wood-fired dishes crafted with house-made sauces, local produce, and a playful modern twist.
-        </p>
-        <div class="banner-actions">
-          <a href="#menu" class="btn btn-primary">Explore Menu</a>
-          <a href="#special-offers" class="btn btn-secondary">Today's Deals</a>
-          <a href="#chef-special" class="btn btn-outline">Chef's Picks</a>
+          <a href="#menu" class="btn btn-primary btn-sm">Book a Table</a>
         </div>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <section class="restaurant-info-section" id="restaurant-info" aria-label="Restaurant Quick Facts">
-    <div class="container">
-      <div class="info-cards-container">
-
-        <div class="info-card-item">
-          <div class="info-icon-box" aria-hidden="true">★</div>
-          <div class="info-details">
-            <strong>4.8 / 5.0 Rating</strong>
-            <span>1,900+ Reviews</span>
-          </div>
+    <section class="search-sub-strip" aria-label="Food search and filters">
+      <div class="search-strip-inner">
+        <div class="search-input-group">
+          <span class="search-icon" aria-hidden="true">⌕</span>
+          <input type="text" placeholder="Search pizzas, bowls, pasta, desserts..." aria-label="Search menu items" />
+          <select class="search-category-select" aria-label="Select food category">
+            <option value="all">All Menus</option>
+            <option value="pizza">Pizza</option>
+            <option value="pasta">Pasta</option>
+            <option value="grill">Grill</option>
+            <option value="dessert">Desserts</option>
+            <option value="drinks">Drinks</option>
+          </select>
+          <button type="button" class="search-submit-btn">Search</button>
         </div>
 
-        <div class="info-card-item">
-          <div class="info-icon-box" aria-hidden="true">🍽️</div>
-          <div class="info-details">
-            <strong>Modern Comfort</strong>
-            <span>Pizza, Burgers, Indian, Asian</span>
+        <div class="quick-search-tags">
+          <span class="quick-tags-label">Popular:</span>
+          <a href="#menu" class="quick-tag-pill">🍕 Fire Pizza</a>
+          <a href="#menu" class="quick-tag-pill">🌿 Herb Bowl</a>
+          <a href="#menu" class="quick-tag-pill">🍝 Truffle Pasta</a>
+          <a href="#menu" class="quick-tag-pill">🍰 Citrus Tart</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero-banner-section" id="banner">
+      <div class="container">
+        <div class="banner-content">
+          <span class="banner-badge"><span>✦</span> Local ingredients • hand-fired • slow evenings</span>
+          <h1>Real comfort food with a little more <span>spark</span>.</h1>
+          <p>
+            Gather for wood-fired flavor, seasonal small plates, and easy evenings that feel relaxed,
+            generous, and worth lingering over.
+          </p>
+          <div class="banner-actions">
+            <a href="#menu" class="btn btn-primary">Explore the Menu</a>
+            <a href="#special-offers" class="btn btn-secondary">This Week's Deals</a>
+            <a href="#chef-special" class="btn btn-outline">Chef's Picks</a>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="info-card-item">
-          <div class="info-icon-box" aria-hidden="true">🚴‍♀️</div>
-          <div class="info-details">
-            <strong>30 Mins Avg</strong>
-            <span>Quick Local Delivery</span>
+    <section class="restaurant-info-section" id="restaurant-info" aria-label="Restaurant information">
+      <div class="container">
+        <div class="info-cards-container">
+          <div class="info-card-item">
+            <div class="info-icon-box" aria-hidden="true">★</div>
+            <div class="info-details">
+              <strong>4.9 / 5.0 Rating</strong>
+              <span>2,400+ happy guests</span>
+            </div>
+          </div>
+
+          <div class="info-card-item">
+            <div class="info-icon-box" aria-hidden="true">🍽️</div>
+            <div class="info-details">
+              <strong>Seasonal Comfort</strong>
+              <span>Pizza, pasta, bowls &amp; sweets</span>
+            </div>
+          </div>
+
+          <div class="info-card-item">
+            <div class="info-icon-box" aria-hidden="true">🚚</div>
+            <div class="info-details">
+              <strong>25–35 min</strong>
+              <span>Fresh delivery across town</span>
+            </div>
+          </div>
+
+          <div class="info-card-item">
+            <div class="info-icon-box" aria-hidden="true">📍</div>
+            <div class="info-details">
+              <strong>Maple &amp; Market Lane</strong>
+              <span>248 Willow Street</span>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="info-card-item">
-          <div class="info-icon-box" aria-hidden="true">📍</div>
-          <div class="info-details">
-            <strong>Main Street</strong>
-            <span>128 Market Lane</span>
-          </div>
+    <section class="categories-section" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Curated favorites</span>
+          <h2>Find your mood</h2>
+          <p>Big flavor, easy comfort, and something for every kind of craving.</p>
         </div>
 
+        <div class="categories-flex-container">
+          <a href="#menu" class="category-flex-card">
+            <div class="category-icon">🍕</div>
+            <h3>Wood-Fired Pizza</h3>
+            <span class="category-count">10 picks</span>
+          </a>
+
+          <a href="#menu" class="category-flex-card">
+            <div class="category-icon">🍝</div>
+            <h3>Pasta &amp; Bowls</h3>
+            <span class="category-count">9 picks</span>
+          </a>
+
+          <a href="#menu" class="category-flex-card">
+            <div class="category-icon">🍔</div>
+            <h3>Grill &amp; Smash</h3>
+            <span class="category-count">8 picks</span>
+          </a>
+
+          <a href="#menu" class="category-flex-card">
+            <div class="category-icon">🥗</div>
+            <h3>Fresh Salads</h3>
+            <span class="category-count">6 picks</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="categories-section" id="categories">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Curated</span>
-        <h2>Browse by Category</h2>
-        <p>Find the mood. Find the flavor.</p>
-      </div>
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Kitchen favorites</span>
+          <h2>Popular on the menu</h2>
+          <p>Handmade daily, served warm, and made to share.</p>
+        </div>
 
-      <div class="categories-flex-container">
-        <a href="#menu" class="category-flex-card">
-          <div class="category-icon">🍕</div>
-          <h3>Wood-Fired Pizza</h3>
-          <span class="category-count">10 Dishes</span>
-        </a>
-
-        <a href="#menu" class="category-flex-card">
-          <div class="category-icon">🍔</div>
-          <h3>Smash Burgers</h3>
-          <span class="category-count">7 Dishes</span>
-        </a>
-
-        <a href="#menu" class="category-flex-card">
-          <div class="category-icon">🍛</div>
-          <h3>Royal Curries</h3>
-          <span class="category-count">12 Dishes</span>
-        </a>
-
-        <a href="#menu" class="category-flex-card">
-          <div class="category-icon">🍰</div>
-          <h3>Desserts</h3>
-          <span class="category-count">6 Dishes</span>
-        </a>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section class="menu-section" id="menu">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Chef's</span>
-        <h2>Popular Menu</h2>
-        <p>Cooked to order, ready to enjoy.</p>
-      </div>
-
-      <div class="menu-grid-container">
-
-        <article class="menu-item-card featured-grid-span">
-          <div class="menu-img-wrapper">
-            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/pizza.jpg" alt="Wood-Fired Truffle Burrata Pizza" loading="lazy">
-          </div>
-          <div class="menu-content">
-            <div>
-              <div class="menu-header-row">
-                <h3 class="menu-title">Truffle Burrata Pizza</h3>
-                <span class="diet-tag veg">Veg</span>
-              </div>
-              <div class="menu-desc-overflow">
-                Slow-fermented crust with house burrata, wild mushrooms and a drizzle of truffle oil.
-              </div>
+        <div class="menu-grid-container">
+          <article class="menu-item-card featured-grid-span">
+            <div class="menu-img-wrapper">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/pizza.jpg" alt="Fire-roasted pizza with fresh herbs and burrata" loading="lazy" />
             </div>
-
-            <div class="menu-footer-row">
-              <div class="menu-price"><span class="price-currency">$</span>17.50</div>
-              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="menu-item-card">
-          <div class="menu-img-wrapper">
-            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/burger.jpg" alt="Smoked Double Angus Burger" loading="lazy">
-          </div>
-          <div class="menu-content">
-            <div>
-              <div class="menu-header-row">
-                <h3 class="menu-title">Double Angus Burger</h3>
-                <span class="diet-tag non-veg">Non-Veg</span>
-              </div>
-              <div class="menu-desc-overflow">
-                Charred beef patties, melted cheddar, caramelised onions and house sauce.
-              </div>
-            </div>
-            <div class="menu-footer-row">
-              <div class="menu-price"><span class="price-currency">$</span>14.00</div>
-              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
-            </div>
-          </div>
-        </article>
-
-        <article class="menu-item-card">
-          <div class="menu-img-wrapper">
-            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/dessert.jpg" alt="Molten Chocolate Lava Cake" loading="lazy">
-          </div>
-          <div class="menu-content">
-            <div>
-              <div class="menu-header-row">
-                <h3 class="menu-title">Molten Lava Cake</h3>
-                <span class="diet-tag veg">Dessert</span>
-              </div>
-              <div class="menu-desc-overflow">
-                Warm Belgian chocolate cake with a molten core, served with vanilla gelato.
-              </div>
-            </div>
-            <div class="menu-footer-row">
-              <div class="menu-price"><span class="price-currency">$</span>8.99</div>
-              <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
-            </div>
-          </div>
-        </article>
-
-      </div>
-
-    </div>
-  </section>
-
-  <section class="offers-section" id="special-offers">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Deals</span>
-        <h2>Special Offers</h2>
-      </div>
-
-      <div class="offers-grid">
-        <article class="offer-card">
-          <div class="offer-img-box">
-            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/pizza.jpg" alt="25% Off Pizza Deal">
-            <span class="offer-badge-absolute">25% OFF</span>
-            <span class="offer-ribbon-tag">Bestseller</span>
-          </div>
-          <div class="offer-body">
-            <h3>Wood-Fired Pizza Combo</h3>
-            <p>Buy 2 Large pizzas and get Garlic Bread free.</p>
-            <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div class="menu-content">
               <div>
-                <span style="text-decoration:line-through; color:#94a3b8;">$36.00</span>
-                <span style="font-weight:bold; color:var(--accent-teal); margin-left:0.5rem;">$26.99</span>
+                <div class="menu-header-row">
+                  <h3 class="menu-title">Garden Fire Pizza</h3>
+                  <span class="diet-tag veg">Veg</span>
+                </div>
+                <div class="menu-desc-overflow">
+                  Slow-fermented crust, burrata, roasted tomatoes, basil, and a lively drizzle of chili oil.
+                </div>
               </div>
-              <a href="#menu" class="btn btn-primary btn-sm">Claim</a>
+
+              <div class="menu-footer-row">
+                <div class="menu-price"><span class="price-currency">$</span>18.50</div>
+                <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <div class="menu-img-wrapper">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/burger.jpg" alt="Smash burger with melted cheese and caramelized onion" loading="lazy" />
+            </div>
+            <div class="menu-content">
+              <div>
+                <div class="menu-header-row">
+                  <h3 class="menu-title">Maple Smash Burger</h3>
+                  <span class="diet-tag non-veg">Non-Veg</span>
+                </div>
+                <div class="menu-desc-overflow">
+                  Double beef patties, cheddar, crispy onions, house BBQ sauce, and soft brioche.
+                </div>
+              </div>
+              <div class="menu-footer-row">
+                <div class="menu-price"><span class="price-currency">$</span>15.90</div>
+                <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <div class="menu-img-wrapper">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/indian.jpg" alt="Royal biryani served with cooling raita" loading="lazy" />
+            </div>
+            <div class="menu-content">
+              <div>
+                <div class="menu-header-row">
+                  <h3 class="menu-title">Saffron Biryani Bowl</h3>
+                  <span class="diet-tag non-veg">Special</span>
+                </div>
+                <div class="menu-desc-overflow">
+                  Fragrant rice, slow-cooked spices, tender chicken, herbs, and bright mint yogurt.
+                </div>
+              </div>
+              <div class="menu-footer-row">
+                <div class="menu-price"><span class="price-currency">$</span>17.25</div>
+                <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <div class="menu-img-wrapper">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/chinese.jpg" alt="Crisp dim sum and noodles" loading="lazy" />
+            </div>
+            <div class="menu-content">
+              <div>
+                <div class="menu-header-row">
+                  <h3 class="menu-title">Citrus Dumplings</h3>
+                  <span class="diet-tag veg">Veg</span>
+                </div>
+                <div class="menu-desc-overflow">
+                  Steamed dumplings with greens, ginger, and a light sesame-soy finish.
+                </div>
+              </div>
+              <div class="menu-footer-row">
+                <div class="menu-price"><span class="price-currency">$</span>13.20</div>
+                <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="menu-item-card">
+            <div class="menu-img-wrapper">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/dessert.jpg" alt="Chocolate dessert with warm melted center" loading="lazy" />
+            </div>
+            <div class="menu-content">
+              <div>
+                <div class="menu-header-row">
+                  <h3 class="menu-title">Cocoa Lava Cake</h3>
+                  <span class="diet-tag veg">Sweet</span>
+                </div>
+                <div class="menu-desc-overflow">
+                  Warm dark chocolate center, vanilla bean cream, and a short orange glaze.
+                </div>
+              </div>
+              <div class="menu-footer-row">
+                <div class="menu-price"><span class="price-currency">$</span>9.50</div>
+                <button type="button" class="btn btn-primary btn-sm">Add to Cart</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers-section" id="special-offers">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Easy wins</span>
+          <h2>Tonight's special offers</h2>
+        </div>
+
+        <div class="offers-grid">
+          <article class="offer-card">
+            <div class="offer-img-box">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/pizza.jpg" alt="Pizza offer" />
+              <span class="offer-badge-absolute">25% OFF</span>
+              <span class="offer-ribbon-tag">Bestseller</span>
+            </div>
+            <div class="offer-body">
+              <h3>Weekend Pizza Night</h3>
+              <p>Pair two wood-fired pies with a fresh salad and a house drink for a simple Friday win.</p>
+              <div class="offer-price-row">
+                <div>
+                  <span class="old-price">$36.00</span>
+                  <span class="new-price">$26.99</span>
+                </div>
+                <a href="#menu" class="btn btn-primary btn-sm">Claim</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="offer-card">
+            <div class="offer-img-box">
+              <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/burger.jpg" alt="Burger combo offer" />
+              <span class="offer-badge-absolute">BOGO</span>
+              <span class="offer-ribbon-tag">Popular</span>
+            </div>
+            <div class="offer-body">
+              <h3>Buy One, Get One</h3>
+              <p>Choose any smash burger and add a second at half price for an easy dinner date.</p>
+              <div class="offer-price-row">
+                <div>
+                  <span class="old-price">$30.00</span>
+                  <span class="new-price">$22.50</span>
+                </div>
+                <a href="#menu" class="btn btn-primary btn-sm">Claim</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="chef-special">
+      <div class="chef-special-section clearfix">
+        <img
+          src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/chef-special.jpg"
+          alt="Chef preparing a signature dish"
+          class="floated-chef-image"
+          loading="lazy"
+        />
+
+        <div class="chef-editorial-text">
+          <span class="badge-tag">From the kitchen</span>
+          <h2>Slow-roasted comfort, <span>finished with flair</span>.</h2>
+
+          <p>
+            Our chef cooks with a simple idea in mind: ingredients should taste like themselves, only better.
+            Sun-bright herbs, smoky edges, and sauces layered with patience are what set every plate apart.
+          </p>
+
+          <blockquote class="chef-quote">
+            “A good dinner should feel personal, generous, and a little memorable.”
+          </blockquote>
+
+          <p>
+            This week's special brings together charred vegetables, creamy dressing, and a glossy finish that keeps the whole dish bright and satisfying.
+          </p>
+
+          <div class="ingredients-scroll-container">
+            <strong>Chef's seasonal mix:</strong> basil, lemon zest, roasted peppers, grilled corn, herb oil, whipped ricotta, citrus greens, smoked garlic, and a touch of chili.
+          </div>
+
+          <div class="special-button-wrap">
+            <a href="#menu" class="btn btn-secondary btn-sm">Order Chef's Special ($24.99)</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Moments</span>
+          <h2>Our food and space</h2>
+        </div>
+
+        <div class="gallery-grid-container">
+          <div class="gallery-photo-card">
+            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/banner.jpg" alt="Warm dining room" loading="lazy" />
+            <div class="gallery-overlay-caption">
+              <h4>Easy evenings</h4>
+              <span>Warm dining room</span>
             </div>
           </div>
-        </article>
 
-      </div>
-    </div>
-  </section>
+          <div class="gallery-photo-card">
+            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/pizza.jpg" alt="Wood-fired pizza and herbs" loading="lazy" />
+            <div class="gallery-overlay-caption">
+              <h4>Fire-roasted pie</h4>
+              <span>Fresh basil &amp; burrata</span>
+            </div>
+          </div>
 
-  <section class="gallery-section" id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-subtitle">Gallery</span>
-        <h2>Our Food & Space</h2>
-      </div>
+          <div class="gallery-photo-card">
+            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/burger.jpg" alt="Burger close-up" loading="lazy" />
+            <div class="gallery-overlay-caption">
+              <h4>House smash</h4>
+              <span>Cheddar &amp; onion</span>
+            </div>
+          </div>
 
-      <div class="gallery-grid-container">
-        <div class="gallery-photo-card">
-          <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/banner.jpg" alt="Banquet spread" loading="lazy">
-          <div class="gallery-overlay-caption">
-            <h4>Cozy Dining</h4>
-            <span>Neighborhood Spot</span>
+          <div class="gallery-photo-card">
+            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/indian.jpg" alt="Biryani platter" loading="lazy" />
+            <div class="gallery-overlay-caption">
+              <h4>Saffron rice</h4>
+              <span>Slow-cooked spice</span>
+            </div>
+          </div>
+
+          <div class="gallery-photo-card">
+            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/chinese.jpg" alt="Dim sum platter" loading="lazy" />
+            <div class="gallery-overlay-caption">
+              <h4>Steamed favorites</h4>
+              <span>Bright &amp; delicate</span>
+            </div>
+          </div>
+
+          <div class="gallery-photo-card">
+            <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/dessert.jpg" alt="Dessert plate" loading="lazy" />
+            <div class="gallery-overlay-caption">
+              <h4>Sweet finish</h4>
+              <span>Chocolate &amp; citrus</span>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="gallery-photo-card">
-          <img src="https://raw.githubusercontent.com/kavvz20/ui-ux/main/assign%205/images/chef-special.jpg" alt="Chef special" loading="lazy">
-          <div class="gallery-overlay-caption">
-            <h4>Chef's Special</h4>
-            <span>Signature</span>
-          </div>
+    <a href="#menu" class="floating-cart-fixed" aria-label="Quick order">
+      <span>🛒 Quick Order</span>
+      <span class="cart-count-badge">2</span>
+    </a>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#top-header" class="brand-logo" aria-label="Olive and Oak home">
+            <span class="logo-mark">✦</span>
+            <div class="logo-text">Olive <span>&amp;</span> Oak</div>
+          </a>
+          <p>Seasonal food, soft lighting, and a neighborhood mood you can actually stay for.</p>
         </div>
 
-      </div>
-    </div>
-  </section>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#menu">Favorites</a></li>
+            <li><a href="#special-offers">Offers</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </div>
 
-  <a href="#menu" class="floating-cart-fixed" aria-label="Quick order">
-    <span>🛒 Quick Order</span>
-    <span class="cart-count-badge">0</span>
-  </a>
-
-  <footer class="site-footer" id="contact">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="#top-header" class="brand-logo" style="margin-bottom:1rem;">
-          <span class="logo-flame">🌿</span>
-          <div class="logo-text">Thyme <span>&amp;</span> Ember</div>
-        </a>
-        <p>Modern, seasonal cooking with a neighborhood vibe.</p>
-      </div>
-
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#special-offers">Offers</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-        </ul>
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <ul>
+            <li>📍 248 Willow Street</li>
+            <li>📞 +1 (415) 533-0182</li>
+            <li>✉️ hello@oliveandoak.com</li>
+          </ul>
+        </div>
       </div>
 
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>📍 128 Market Lane</li>
-          <li>📞 +1 (555) 123-4567</li>
-          <li>✉️ hello@thyme-ember.com</li>
-        </ul>
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Olive &amp; Oak • Seasonal Kitchen &amp; Wine Bar</p>
       </div>
-    </div>
-
-    <div class="footer-bottom-bar">
-      <p>&copy; 2026 Thyme & Ember — Lab Assignment 5 (customized)</p>
-    </div>
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
