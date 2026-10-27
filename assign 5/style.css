@@ -1,0 +1,440 @@
+/* BITE & BREW - Web Development Lab 5
+   Colours: #3B1F1F (dark brown), #FFF8F0 (cream), #C85A3F (red-orange), #F3C892 (light orange) */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   /* width includes padding and border */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8F0;
+    color: #3B1F1F;
+    line-height: 1.5;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* LAB 5: DISPLAY BLOCK - sections act as full-width block containers */
+.container {
+    display: block;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+
+/* LAB 5: DISPLAY INLINE-BLOCK - buttons sit in a line but accept padding/width */
+.btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #C85A3F;
+    color: #FFF8F0;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3B1F1F;
+}
+
+/* LAB 5: DISPLAY INLINE - price stays inside the sentence */
+.price {
+    display: inline;
+    font-weight: bold;
+    color: #C85A3F;
+}
+
+/* LAB 5: HEADER + FLEXBOX */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 20px;
+    background-color: #3B1F1F;
+    color: #FFF8F0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F3C892;
+}
+
+.main-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #F3C892;
+}
+
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+
+.search-box input {
+    padding: 7px;
+    border: 1px solid #F3C892;
+    border-radius: 4px;
+}
+
+/* LAB 5: BANNER - BACKGROUND PROPERTIES + POSITION + OVERFLOW */
+.banner {
+    position: relative;        /* overlay is positioned inside the banner */
+    overflow: hidden;          /* anything outside the banner is hidden */
+    background-color: #3B1F1F; /* shows if the image does not load */
+    background-image: url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1400&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #FFF8F0;
+    text-align: center;
+}
+
+.banner-overlay {
+    position: absolute;        /* covers the whole banner */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 31, 31, 0.65);   /* dark layer so text is readable */
+}
+
+.banner-text {
+    position: relative;        /* keeps the text above the overlay */
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 90px 20px;
+}
+
+.banner-text h2 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 20px;
+    color: #F3C892;
+    margin-bottom: 10px;
+}
+
+.banner-text .btn {
+    margin-top: 20px;
+}
+
+/* LAB 5: RESTAURANT INFORMATION - BOX MODEL */
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-card {
+    margin: 8px;                       /* space outside the box */
+    padding: 15px;                     /* space inside the box */
+    border: 2px solid #C85A3F;         /* box edge */
+    background-color: #ffffff;
+    width: 180px;
+    text-align: center;
+}
+
+/* LAB 5: FLEXBOX CATEGORIES */
+.categories {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.category {
+    padding: 10px 25px;
+    background-color: #F3C892;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.category:hover {
+    background-color: #C85A3F;
+    color: #FFF8F0;
+}
+
+/* LAB 5: CSS GRID FOOD MENU */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   /* 3 equal columns */
+    grid-template-rows: auto auto auto;      /* 3 rows, height fits content */
+    gap: 20px;
+}
+
+/* first item is wider: starts at column line 1, ends at line 3 (2 columns), in row 1 */
+.featured {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+.food-card {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #F3C892;
+    border-radius: 6px;
+}
+
+.food-card img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;     /* crops the image instead of stretching it */
+    margin-bottom: 10px;
+}
+
+.food-card h3 {
+    margin-bottom: 5px;
+}
+
+.food-card .price,
+.food-card p {
+    margin-bottom: 8px;
+}
+
+/* LAB 5: OVERFLOW AUTO - long description gets a scrollbar only when needed */
+.food-desc {
+    height: 3em;
+    overflow: auto;
+    font-size: 14px;
+}
+
+/* LAB 5: SPECIAL OFFERS - RELATIVE + ABSOLUTE */
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.offer-card {
+    width: 300px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #F3C892;
+    text-align: center;
+}
+
+.offer-card p {
+    margin-bottom: 8px;
+}
+
+.food-image {
+    position: relative;        /* badge is positioned inside this box */
+    margin-bottom: 10px;
+}
+
+.food-image img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.offer-badge {
+    position: absolute;        /* placed over the image */
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: #C85A3F;
+    color: #FFF8F0;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* LAB 5: DISPLAY NONE - note is hidden until the card is hovered */
+.offer-note {
+    display: none;
+    font-size: 14px;
+    color: #C85A3F;
+}
+
+.offer-card:hover .offer-note {
+    display: block;
+}
+
+/* LAB 5: OVERFLOW SCROLL - fixed-height box that always shows scrollbars */
+.terms-box {
+    width: 100%;
+    max-width: 600px;
+    height: 110px;
+    margin: 25px auto 0;
+    padding: 10px;
+    overflow: scroll;
+    background-color: #ffffff;
+    border: 1px solid #3B1F1F;
+    font-size: 14px;
+}
+
+.terms-box ul {
+    margin-left: 20px;
+}
+
+/* LAB 5: FIXED POSITION ORDER BUTTON */
+.order-now-fixed {
+    position: fixed;           /* stays on screen while scrolling */
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background-color: #C85A3F;
+    color: #FFF8F0;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.order-now-fixed:hover {
+    background-color: #3B1F1F;
+}
+
+/* LAB 5: CHEF'S SPECIAL - FLOAT + CLEAR + CLEARFIX */
+.chef-section {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid #C85A3F;   /* border shows the parent contains the floated image */
+}
+
+.chef-image {
+    float: left;                 /* text wraps on the right side */
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.chef-section p {
+    margin-bottom: 10px;
+}
+
+/* clear: moves the signature below the floated image */
+.chef-signature {
+    clear: both;
+    font-style: italic;
+    text-align: right;
+}
+
+/* clearfix: makes the parent grow to include the floated image */
+.chef-section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* LAB 5: CSS GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #F3C892;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);      /* small zoom on hover */
+}
+
+/* FOOTER */
+.site-footer {
+    padding: 25px 15px;
+    margin-top: 20px;
+    background-color: #3B1F1F;
+    color: #FFF8F0;
+    text-align: center;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+}
+
+/* LAB 5: RESPONSIVE - TABLET */
+@media (max-width: 900px) {
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .featured {
+        grid-column: auto;       /* back to normal size */
+        grid-row: auto;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .site-header {
+        justify-content: center;
+    }
+}
+
+/* LAB 5: RESPONSIVE - MOBILE */
+@media (max-width: 600px) {
+    .menu-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .chef-image {
+        float: none;             /* image goes above the text */
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .banner-text {
+        padding: 60px 15px;
+    }
+
+    .banner-text h2 {
+        font-size: 30px;
+    }
+}

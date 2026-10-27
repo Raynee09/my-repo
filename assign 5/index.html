@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITE & BREW - Good Food. Good Mood.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LAB 5: HEADER + FLEXBOX -->
+    <header class="site-header" id="home">
+        <a href="#home" class="logo">BITE &amp; BREW</a>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#offers">Offers</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <form class="search-box" action="#">
+            <input type="search" placeholder="Search food..." aria-label="Search food">
+            <button type="submit" class="btn">Search</button>
+        </form>
+
+        <a href="#menu" class="btn">Order Now</a>
+    </header>
+
+    <main>
+
+        <!-- LAB 5: BANNER (BACKGROUND + POSITION + OVERFLOW) -->
+        <section class="banner">
+            <div class="banner-overlay"></div>
+            <div class="banner-text">
+                <h2>BITE &amp; BREW</h2>
+                <p class="tagline">Good Food. Good Mood.</p>
+                <p>Fresh pizzas, burgers, Indian and Chinese dishes delivered hot to your door in Patiala.</p>
+                <a href="#menu" class="btn">Order Now</a>
+            </div>
+        </section>
+
+        <!-- LAB 5: RESTAURANT INFORMATION (BOX MODEL) -->
+        <section class="container">
+            <h2>Restaurant Information</h2>
+            <div class="info">
+                <div class="info-card">⭐ <strong>Rating:</strong> 4.5/5</div>
+                <div class="info-card">🍴 <strong>Cuisine:</strong> Italian, Indian &amp; Chinese</div>
+                <div class="info-card">⏱ <strong>Delivery:</strong> 30–40 min</div>
+                <div class="info-card">📍 <strong>Location:</strong> Patiala</div>
+                <div class="info-card">🔥 <strong>Special Offer:</strong> 20% OFF above ₹499</div>
+            </div>
+        </section>
+
+        <!-- LAB 5: FOOD CATEGORIES (FLEXBOX) -->
+        <section class="container">
+            <h2>Food Categories</h2>
+            <div class="categories">
+                <a href="#menu" class="category">Pizza</a>
+                <a href="#menu" class="category">Burgers</a>
+                <a href="#menu" class="category">Indian</a>
+                <a href="#menu" class="category">Chinese</a>
+                <a href="#menu" class="category">Desserts</a>
+                <a href="#menu" class="category">Beverages</a>
+            </div>
+        </section>
+
+        <!-- LAB 5: FOOD MENU (CSS GRID) -->
+        <section class="container" id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+
+                <article class="food-card featured">
+                    <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=700&q=80" alt="Margherita pizza with melted cheese and basil">
+                    <h3>Margherita Pizza</h3>
+                    <p class="food-desc">Classic thin-crust pizza topped with tomato sauce, fresh mozzarella cheese and basil leaves. Our most popular dish.</p>
+                    <p>Price: <span class="price">₹249</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&q=80" alt="Classic burger with lettuce and cheese">
+                    <h3>Classic Burger</h3>
+                    <p class="food-desc">Juicy veg patty with lettuce, tomato, cheese slice and our special sauce in a toasted sesame bun.</p>
+                    <p>Price: <span class="price">₹199</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=700&q=80" alt="Paneer tikka served with mint chutney">
+                    <h3>Paneer Tikka</h3>
+                    <p class="food-desc">Soft paneer cubes marinated in curd and spices, grilled in a tandoor and served with mint chutney.</p>
+                    <p>Price: <span class="price">₹229</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?w=700&q=80" alt="Plate of hakka noodles with vegetables">
+                    <h3>Hakka Noodles</h3>
+                    <p class="food-desc">Stir-fried noodles tossed with crunchy vegetables, soy sauce and a hint of garlic.</p>
+                    <p>Price: <span class="price">₹219</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=700&q=80" alt="Chocolate brownie on a plate">
+                    <h3>Chocolate Brownie</h3>
+                    <p class="food-desc">Warm, soft chocolate brownie with a crisp top. Best enjoyed with a glass of cold milk.</p>
+                    <p>Price: <span class="price">₹149</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=700&q=80" alt="Glass of cold coffee">
+                    <h3>Cold Coffee</h3>
+                    <p class="food-desc">Chilled blended coffee with milk and a little sugar, served in a tall glass with ice.</p>
+                    <p>Price: <span class="price">₹129</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=700&q=80" alt="Chicken biryani in a bowl">
+                    <h3>Chicken Biryani</h3>
+                    <p class="food-desc">Fragrant basmati rice cooked with tender chicken and whole spices, served with raita.</p>
+                    <p>Price: <span class="price">₹259</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+                <article class="food-card">
+                    <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=700&q=80" alt="Penne pasta in creamy white sauce">
+                    <h3>Creamy Penne Pasta</h3>
+                    <p class="food-desc">Penne pasta in a rich white sauce with sweet corn, capsicum and Italian herbs.</p>
+                    <p>Price: <span class="price">₹239</span></p>
+                    <button class="btn">Add to Cart</button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- LAB 5: SPECIAL OFFERS (RELATIVE + ABSOLUTE + FIXED) -->
+        <section class="container" id="offers">
+            <h2>Special Offers</h2>
+            <div class="offers">
+
+                <article class="offer-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=700&q=80" alt="Pizza with toppings">
+                        <span class="offer-badge">20% OFF</span>
+                    </div>
+                    <h3>Pizza Party Offer</h3>
+                    <p>Get 20% OFF on orders above ₹499.</p>
+                    <p class="offer-note">Valid on all pizzas, once per order.</p>
+                    <a href="#menu" class="btn">Order Now</a>
+                </article>
+
+                <article class="offer-card">
+                    <div class="food-image">
+                        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=700&q=80" alt="Burger with fries">
+                        <span class="offer-badge">FREE</span>
+                    </div>
+                    <h3>Burger Combo</h3>
+                    <p>Free cold coffee with every Classic Burger.</p>
+                    <p class="offer-note">Valid on dine-in and delivery orders.</p>
+                    <a href="#menu" class="btn">Order Now</a>
+                </article>
+
+            </div>
+
+            <!-- overflow: scroll example -->
+            <div class="terms-box">
+                <h3>Offer Terms</h3>
+                <ul>
+                    <li>20% discount is applicable only on orders above ₹499.</li>
+                    <li>Only one offer can be used per order.</li>
+                    <li>Offers cannot be combined with other discounts.</li>
+                    <li>Delivery is available within Patiala city only.</li>
+                    <li>Delivery time may increase during rush hours.</li>
+                    <li>Free cold coffee offer is valid with Classic Burger only.</li>
+                    <li>Restaurant can change or stop offers at any time.</li>
+                    <li>Images shown are for representation only.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LAB 5: CHEF'S SPECIAL (FLOAT + CLEAR + CLEARFIX) -->
+        <section class="container">
+            <article class="chef-section">
+                <h2>CHEF'S SPECIAL</h2>
+                <img class="chef-image" src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Beautifully plated dish prepared by the chef">
+                <p>This week our head chef has prepared a special Paneer Lababdar with butter naan. The gravy is slow-cooked with fresh tomatoes, cream and homemade spices, giving it a rich and smooth taste.</p>
+                <p>We use fresh ingredients every morning and prepare each dish only after you order. Try it once and you will want to order it again.</p>
+                <p class="chef-signature">- Chef Arjun Singh</p>
+            </article>
+        </section>
+
+        <!-- LAB 5: FOOD GALLERY (CSS GRID) -->
+        <section class="container" id="gallery">
+            <h2>Food Gallery</h2>
+            <div class="gallery">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80" alt="Freshly baked pizza">
+                <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?w=600&q=80" alt="Fresh vegetable salad">
+                <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=600&q=80" alt="Indian curry with rice">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Doughnuts and sweet desserts">
+                <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&q=80" alt="Burger with french fries">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&q=80" alt="Healthy vegetable bowl">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- LAB 5: FIXED POSITION BUTTON -->
+    <a href="#menu" class="order-now-fixed">🛒 Order Now</a>
+
+    <footer class="site-footer" id="contact">
+        <p><strong>BITE &amp; BREW</strong> - Good Food. Good Mood.</p>
+        <p>📍 Patiala, Punjab &nbsp;|&nbsp; 📞 +91 98765 43210 &nbsp;|&nbsp; ✉ hello@biteandbrew.example</p>
+        <p>Open daily: 11:00 AM - 11:00 PM</p>
+        <p>&copy; 2026 BITE &amp; BREW. Made for Web Development Lab 5.</p>
+    </footer>
+
+</body>
+</html>
